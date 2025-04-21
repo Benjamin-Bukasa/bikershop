@@ -5,7 +5,7 @@ import BannerText from './BannerText';
 const Banner = () => {
   return (
     <>
-      <section className={`flex flex-col mt-20 py-8 md:flex-row md:p-40 md:gap-8`}>
+      <section className={`flex flex-col gap-12 mt-18 py-32 px-4 md:flex-row md:items-center md:pt-52 md:px-44 md:gap-10`}>
        <BannerText/> 
        <Carousel/> 
       </section>

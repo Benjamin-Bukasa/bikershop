@@ -2,6 +2,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -14,7 +15,8 @@ export default {
     },
     screens: {
       '2xs': "280px",
-      xs: '480px',
+      xs: '430px',
+      xsm:'480px',
       sm: '720px',
       md: '980px',
       lg: '1024px',

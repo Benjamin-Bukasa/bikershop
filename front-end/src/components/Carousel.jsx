@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/images/banner1.jpg',
-  '/images/banner2.jpg',
-  '/images/banner3.jpg'
+  '/images/banner1.png',
+  '/images/banner2.png',
+  '/images/banner3.png'
 ];
 
 const slideVariants = {
@@ -37,7 +37,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] max-w-5xl mx-auto overflow-hidden md:w-1/2">
+    <div className="relative bg-transparent rounded-xl  w-full h-[300px] md:h-[450px] max-w-5xl mx-auto overflow-hidden md:w-1/2">
       <AnimatePresence custom={direction}>
         <motion.img
           key={index}
@@ -47,7 +47,7 @@ const Carousel = () => {
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute top-0 left-0 w-full h-full object-contain"
+          className="absolute top-0 left-0 w-full h-full object-fill"
         />
       </AnimatePresence>
     </div>
