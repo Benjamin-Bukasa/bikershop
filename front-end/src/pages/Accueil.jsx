@@ -1,11 +1,12 @@
 import React from 'react'
 import PageWrapper from '../components/PageWrapper';
+import Banner from '../components/Banner';
 
 function Accueil() {
   return (
     <>
       <PageWrapper>
-        <h1 className="text-2xl font-bold">Accueil</h1>
+        <Banner/>
       </PageWrapper>
     </>
   )

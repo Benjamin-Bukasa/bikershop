@@ -3,6 +3,7 @@ import { lazy } from "react";
 
 //import of Layout component
 import Layout from "../layouts/Layout";
+import App from "../App";
 
 //Import of page components
 const Accueil = lazy(()=>import("../pages/Accueil"))
