@@ -3,7 +3,7 @@ import React from 'react';
 const BannerText = () => {
   return (
     <>
-      <div className="w-full flex flex-col justify-start items-center gap-6 text-center md:w-1/2 md:items-start md:text-left">
+      <div className="w-full flex flex-col justify-start items-center gap-6 text-center md:w-1/2 md:items-start md:text-left md:gap-10">
       <h1 className="font-bold text-4xl leading-[40px] md:text-7xl">
           Procure-toi un{" "}
           <span className="bg-gradient-to-r from-red-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">

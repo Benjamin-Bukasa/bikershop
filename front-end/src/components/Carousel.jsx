@@ -31,13 +31,13 @@ const Carousel = () => {
         const nextIndex = (prevIndex + 1) % images.length;
         return [nextIndex, -1];
       });
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] max-w-5xl  mx-auto overflow-hidden">
+    <div className="relative w-full h-[400px] max-w-5xl mx-auto overflow-hidden md:w-1/2">
       <AnimatePresence custom={direction}>
         <motion.img
           key={index}
