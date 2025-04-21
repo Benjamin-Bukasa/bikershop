@@ -20,8 +20,12 @@ const Services = lazy(()=>import("../pages/Services"))
 export const router = createBrowserRouter([
     {
         path:"/",
-        element:<App/>,
+        element:<Layout/>,
         children:[
+            {
+                path:'/',
+                element:<Accueil/>
+            },
             {
                 path:'/home',
                 element:<Accueil/>
