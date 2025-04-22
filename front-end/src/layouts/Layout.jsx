@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
+import { useToggleNav } from '../utils/store';
 import useThemeStore from '../utils/store'
 
 
@@ -11,6 +12,11 @@ import Header from '../components/Header';
 
 
 const Layout = () => {
+
+  const {setOpen} = useToggleNav()
+  const handleClick = () => {
+    setOpen(); 
+  };
 
   const { theme } = useThemeStore()
   
@@ -28,7 +34,7 @@ const Layout = () => {
       {/* <Navbar/> */}
       <Header/>
       
-      <main className="">
+      <main onClick={handleClick} className="">
         {<Outlet/>}
       </main>
       <Footer/>
