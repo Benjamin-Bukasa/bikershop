@@ -13,9 +13,11 @@ import Header from '../components/Header';
 
 const Layout = () => {
 
-  const {setOpen} = useToggleNav()
+  const {open,setOpen} = useToggleNav()
   const handleClick = () => {
-    setOpen(); 
+    if (open) {
+      setOpen(false);
+    } 
   };
 
   const { theme } = useThemeStore()
@@ -34,7 +36,7 @@ const Layout = () => {
       {/* <Navbar/> */}
       <Header/>
       
-      <main onClick={handleClick} className="">
+      <main onClick={handleClick} className="flex flex-col gap-20 md:flex md:flex-col md:gap-10">
         {<Outlet/>}
       </main>
       <Footer/>
