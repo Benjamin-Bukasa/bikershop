@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import {SunMoon,Moon} from 'lucide-react'
 import { NavLinks } from '../../services/NavLinks';
 import { useToggleNav } from '../../utils/store';
 import useThemeStore from '../../utils/store'; // <-- ajoute ceci
@@ -33,9 +34,9 @@ const Navbar = () => {
         <li className="px-4 mt-4 md:mt-0">
           <button
             onClick={toggleTheme}
-            className="w-10 h-10 p-1 border bg-stone-700/15 rounded-full  text-black dark:bg-zinc-800 dark:text-white transition-colors duration-300 dark:border-stone-700/15"
+            className="w-10 h-10 text-center flex items-center justify-center p-1 border bg-stone-900/15 rounded-full  text-black dark:bg-zinc-800 dark:text-white transition-colors duration-300 dark:border-stone-700/15"
           >
-            {theme === 'light' ? '🌙' : '☀️'}
+            {theme === 'light' ? <Moon /> :<SunMoon /> }
           </button>
         </li>
       </ul>

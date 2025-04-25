@@ -16,7 +16,7 @@ const MenuHamb = () => {
   return (
     <div className="flex justify-between items-center gap-1 2xs:max-xs:flex-1 2xs:max-xs:justify-between ">
       <SearchForm/>
-      <button onClick={handleClick} className='p-2 border dark:border-gray-100/15 rounded-md md:hidden'>{open?
+      <button onClick={handleClick} className='p-2 border dark:border-gray-100/15 rounded-md md:hidden transition-all duration-150'>{open?
         <X />:
         <AlignJustify 
         className=""/>}</button>

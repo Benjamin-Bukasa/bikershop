@@ -37,7 +37,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative bg-transparent rounded-xl  w-full h-[300px] md:h-[450px] max-w-5xl mx-auto overflow-hidden md:w-1/2">
+    <div className="relative bg-transparent rounded-xl  w-full h-[300px] md:h-[450px] max-w-5xl mx-auto overflow-hidden md:w-1/2 sm:max-[979px]:w-[540px]">
       <AnimatePresence custom={direction}>
         <motion.img
           key={index}
