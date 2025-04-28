@@ -4,9 +4,9 @@ const BannerText = () => {
   return (
     <>
       <div className="w-full flex flex-col justify-start items-center gap-6 text-center md:w-1/2 md:items-between md:text-left md:gap-10 sm:max-[979px]:gap-10">
-      <h1 className="font-bold text-4xl leading-[40px] md:text-7xl sm:max-[979px]:text-7xl">
+      <h1 className="font-bold text-4xl leading-[40px] md:leading-[60px] md:font-semibold md:text-6xl sm:max-[979px]:text-7xl">
           Procure-toi un{" "}
-          <span className="bg-gradient-to-r from-red-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-red-500 via-purple-500 to-pink-500 bg-clip-text text-transparent md:font-bold">
             Special Bike
           </span>
       </h1>
