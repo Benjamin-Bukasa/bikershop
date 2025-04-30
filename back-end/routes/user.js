@@ -15,7 +15,7 @@ const verifyUser = require('../middlewares/verifyUser.js');
 
 router.get('/', getAllUsers); // Get all users
 router.get('/:id', getUserById).put('/:id', verifyUser,updateUser).delete('/:id', verifyUser, deleteUser); 
-router.get('/me', getCurrentUser); // Get current user
+router.get('/me', verifyUser, getCurrentUser); // Get current user
 
 
 router.post('/login', loginUser); // Login user
